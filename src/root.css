@@ -1,6 +1,8 @@
 body {
-  font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell,
+  margin-top: 3rem;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #eff5f9;
 }
 
 a {
@@ -23,10 +25,18 @@ h1 {
   max-width: 14rem;
 }
 
+
 p {
   max-width: 14rem;
   margin: 2rem auto;
   line-height: 1.35;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media (min-width: 480px) {
@@ -37,4 +47,61 @@ p {
   p {
     max-width: none;
   }
+}
+
+/* =========================================================== */
+
+.circular-image {
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+  background: url(URL) no-repeat;
+  background-color: #d8efea;
+  -webkit-box-shadow: 0 0 12px rgba(249, 81, 54, 1);
+  -moz-box-shadow: 0 0 12px rgba(249, 81, 54, 1);
+  box-shadow: 0 0 12px rgba(249, 81, 54, 1);
+}
+
+.my-name {
+  font-size: 1.7rem;
+  color: #f86d65;
+  margin: 1rem 0;
+}
+
+.center-dev {
+  margin: auto;
+  width: 50%;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes glitter {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5);
+  }
+}
+
+.pop-and-glitter {
+  animation: pop 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), glitter 1s 0.5s;
 }
