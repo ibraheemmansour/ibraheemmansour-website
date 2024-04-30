@@ -8,7 +8,7 @@ export default function Home() {
 
       <h2 className="my-name">Ibraheem Mansour</h2>
       <h3>Software Engineer</h3>
-      <p style="margin: 0rem 10rem 0rem 10rem" textAlign="justify">
+      <p style="" textAlign="justify">
       Computer and communications engineering graduate (M.S.) with over 7 years of experience in full-stack development, implementing, and testing software to meet specific client requirements. With a dedication to continual self-development, I enjoy working collaboratively or independently and have an eye for detail. Currently, I am seeking a career with a progressive company that provides an opportunity to enhance my technical skills.
       </p>
       
