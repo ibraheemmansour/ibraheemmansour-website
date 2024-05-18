@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  gap: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin-bottom: 1em;
+}
+.section-header {
+  background-color: #3a3a3a;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.skill-name {
+  flex: 1;
+}
+.skill-rating {
+  display: flex;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background-color: #ff4444;
+}
+.circle.empty {
+  background-color: #e0e0e0;
+}
