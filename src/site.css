@@ -1,4 +1,4 @@
-.container {
+.publication-container {
   display: flex;
   gap: 40px;
   background-color: #ffffff;
@@ -41,8 +41,60 @@
   height: 15px;
   margin: 0 3px;
   border-radius: 50%;
-  background-color: #ff4444;
+  background-color: #ff6347;
 }
 .circle.empty {
   background-color: #e0e0e0;
+}
+.bar-container {
+  width: 300px;
+  margin-bottom: 10px;
+  margin-bottom: 2rem
+}
+.label {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.bar {
+  height: 20px;
+  background-color: #ff6347;
+}
+.bar-background {
+  height: 20px;
+  background-color: #d3d3d3;
+}
+.cover-image {
+  flex: 1;
+  margin-right: 20px;
+}
+.cover-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.content {
+  flex: 3;
+}
+.title {
+  font-size: 2em;
+  margin: 0 0 10px;
+}
+.content a {
+  text-decoration: none;
+}
+.subtitle {
+  font-size: 1.2em;
+  color: #555;
+  margin: 0 0 20px;
+}
+.description {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+.book-status {
+  font-size: 0.8rem
+}
+a {
+  text-decoration: none !important;
 }

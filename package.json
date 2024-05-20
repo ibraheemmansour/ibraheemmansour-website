@@ -16,6 +16,9 @@
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@solidjs/meta": "^0.28.0",
     "@solidjs/router": "^0.5.0",
+    "bootstrap": "^5.3.3",
+    "react-bootstrap": "^2.10.2",
+    "react-responsive-carousel": "^3.2.23",
     "solid-js": "^1.5.7",
     "solid-start": "^0.1.0",
     "undici": "^5.10.0"

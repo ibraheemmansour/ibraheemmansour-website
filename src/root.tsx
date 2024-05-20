@@ -30,11 +30,9 @@ export default function Root() {
       </Head>
       <Body>
         <Suspense>
-          <ErrorBoundary>
-            <Routes>
-              <FileRoutes />
-            </Routes>
-          </ErrorBoundary>
+          <Routes>
+            <FileRoutes />
+          </Routes>
         </Suspense>
         <Scripts />
       </Body>
