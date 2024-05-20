@@ -1,0 +1,100 @@
+.publication-container {
+  display: flex;
+  gap: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin-bottom: 1em;
+}
+.section-header {
+  background-color: #3a3a3a;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.skill-name {
+  flex: 1;
+}
+.skill-rating {
+  display: flex;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background-color: #ff6347;
+}
+.circle.empty {
+  background-color: #e0e0e0;
+}
+.bar-container {
+  width: 300px;
+  margin-bottom: 10px;
+  margin-bottom: 2rem
+}
+.label {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.bar {
+  height: 20px;
+  background-color: #ff6347;
+}
+.bar-background {
+  height: 20px;
+  background-color: #d3d3d3;
+}
+.cover-image {
+  flex: 1;
+  margin-right: 20px;
+}
+.cover-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.content {
+  flex: 3;
+}
+.title {
+  font-size: 2em;
+  margin: 0 0 10px;
+}
+.content a {
+  text-decoration: none;
+}
+.subtitle {
+  font-size: 1.2em;
+  color: #555;
+  margin: 0 0 20px;
+}
+.description {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+.book-status {
+  font-size: 0.8rem
+}
+a {
+  text-decoration: none !important;
+}
