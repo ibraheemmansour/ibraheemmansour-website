@@ -15,7 +15,7 @@ import {
 import "./root.css";
 import "./site.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import "../scripts/custom.js";
+import "./scripts/custom.js";
 
 export default function Root() {
   return (

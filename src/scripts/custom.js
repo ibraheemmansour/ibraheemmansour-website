@@ -1,4 +1,5 @@
-const texts = ['Full-Stack Software Developer', 'Computer & Communications Engineer', 'Writer', 'Foodie', 'Bookworm', 'Cinephile', 'Hiker'];
+import texts from '../routes/data/who_am_i.json'
+
 let count = 0;
 let index = 0;
 let currentText = '';
@@ -19,7 +20,7 @@ let letter = '';
             index = 0;
             setTimeout(() => {
                 setTimeout(type, 100);
-            }, 1200); // 100ms delay before calling the function again
+            }, 1200);
         } else {
             setTimeout(type, 100);
         }

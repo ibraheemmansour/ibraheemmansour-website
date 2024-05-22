@@ -1,9 +1,9 @@
-import HomeSection from './Home';
-import AboutSection from './About';
-import PublicationsSection from './Publications';
-import ExperienceSection from './Experience';
-import EducationSection from './Education';
-import SkillsSection from './Skills';
+import HomeSection from './components/Home';
+import AboutSection from './components/About';
+import PublicationsSection from './components/Publications';
+import ExperienceSection from './components/Experience';
+import EducationSection from './components/Education';
+import SkillsSection from './components/Skills';
 
 export default function Home() {
   return (
