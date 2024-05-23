@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "target": "ESNext",
@@ -12,5 +14,8 @@
     "paths": {
       "~/*": ["./src/*"]
     }
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
