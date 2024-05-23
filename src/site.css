@@ -135,6 +135,10 @@ a {
     font-size: 1.2rem;
     margin-right: 1rem;
   }
+  .img-smaller {
+    width: 50%;
+    text-align: center;
+  }
 }
 
 @keyframes updown {
@@ -166,4 +170,7 @@ a {
 .word-warp {
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+.text-justify {
+  text-align: justify;
 }
