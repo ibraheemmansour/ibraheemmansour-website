@@ -4,6 +4,7 @@ import PublicationsSection from './components/Publications';
 import ExperienceSection from './components/Experience';
 import EducationSection from './components/Education';
 import SkillsSection from './components/Skills';
+import LanguagesSection from './components/Languages';
 
 export default function Home() {
   return (
@@ -71,29 +72,7 @@ export default function Home() {
             <hr class="m-0" /> */}
 
             {/* Languages */}
-            <section class="resume-section" id="languages">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Languages</h2>
-                    <div class="bar-container">
-                        <div class="h4">Arabic</div>
-                        <div class="bar-background" style="width: 100%;">
-                            <div class="bar" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="bar-container">
-                        <div class="h4">English</div>
-                        <div class="bar-background" style="width: 100%;">
-                            <div class="bar" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="bar-container">
-                        <div class="h4">French</div>
-                        <div class="bar-background" style="width: 100%;">
-                            <div class="bar" style="width: 45%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <LanguagesSection />       
             <hr class="m-0" />
 
            {/* Favorites */}

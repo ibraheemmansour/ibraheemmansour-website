@@ -1,4 +1,4 @@
-import texts from '../routes/data/who_am_i.json'
+import texts from '../routes/data/about_me.json'
 
 let count = 0;
 let index = 0;

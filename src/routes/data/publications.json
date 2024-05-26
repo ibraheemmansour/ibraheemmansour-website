@@ -1,0 +1,52 @@
+[
+    {
+        "id": "the_generosity_of_an_unfinished_childhood",
+        "category": "creative_writing",
+        "image": "assets/img/publications/creative_writing/the_generosity_of_an_unfinished_childhood.jpg",
+        "text": "The Generosity of an Unfinished Childhood",
+        "description": "In the seaside community of Bir Byat, a family-run chocolate shop became a beacon of happiness in a sea of sorrow. When their son, George, aged ten, attempted to present a unique chocolate gift to an important community member, it set off a series of events challenging the fragile balance between hope and despair, leaving behind a tale that shook the entire country.",
+        "type": "Short Story",
+        "status": "Published",
+        "url": "https://www.amazon.com/Generosity-Unfinished-Childhood-Ibraheem-Mansour-ebook/dp/B0D3KDJLY9"
+    },
+    {
+        "id": "in_search_of_a_name",
+        "category": "creative_writing",
+        "image": "assets/img/publications/creative_writing/in_search_of_a_name.jpg",
+        "text": "In Search of a Name",
+        "description": "A story of betrayal set in the ruthless world of organized crime. Two soldiers from the same crime family, once friends, now engage in a game of cat and mouse across the new promised land, Pacifica. Amid their conflict, an innocent life gets caught in the crossfire.",
+        "type": "Novel",
+        "status": "Work in Progress",
+        "url": null
+    },
+    {
+        "id": "the_tree_that_knew_too_much",
+        "category": "creative_writing",
+        "image": "assets/img/publications/creative_writing/the_tree_that_knew_too_much.jpg",
+        "text": "The Tree That Knew Too Much",
+        "description": "",
+        "type": "Novel",
+        "status": "Future Work",
+        "url": null
+    },
+    {
+        "id": "prediction_of_football_matches",
+        "category": "ieee",
+        "image": "assets/img/publications/ieee/prediction_of_football_matches.jpg",
+        "text": "Prediction of Football Matches’ Results Using Neural Networks",
+        "description": "In this paper, learning with a teacher artificial neural network to predict the results of football matches is presented. This type of network requires training via examples. When the training is complete, the network can be tested to check the results of new examples. In this application, the training examples are the results of previous matches, which the network will use to predict the results of new ones.",
+        "type": null,
+        "status": null,
+        "url": "https://www.springerprofessional.de/en/prediction-of-football-matches-results-using-neural-networks/16079454"
+    },
+    {
+        "id": "speed_warning_public_safety_via_gps",
+        "category": "ieee",
+        "image": "assets/img/publications/ieee/speed_warning_public_safety_via_gps.jpg",
+        "text": "Speed, Warning, and Public Safety via GPS",
+        "description": "Despite rational speed limits, many drivers surpass them, endangering public safety. To address this, the 'Speed, Warning, and Public Safety via GPS' system automatically fines speeding drivers by transmitting their information to the police and alerting them when they approach speed limits. This university project, limited to specific areas, uses a GPS receiver, microcontroller, and Ethernet Shield to detect and report violations, with future plans to expand coverage across Lebanon.",
+        "type": null,
+        "status": null,
+        "url": "https://drive.google.com/file/d/1JSnWH-clSNpOgGem1Pvc5OAgdz1v7w4v/view?usp=sharing"
+    }
+]
