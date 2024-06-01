@@ -55,7 +55,7 @@ for (let i = 0; i < publications.length; i++) {
                             {publications[i].description}
                         </div>
                         {publications[i].url != null ? 
-                        <a class="width-100" href={publications[i].url} target="_blank" rel="noopener noreferrer">
+                        <a  style="flex flex-direction" href={publications[i].url} target="_blank" rel="noopener noreferrer">
                             <button class="btn width-50 float-right btn-primary">{publications[i].category == "creative_writing" ? "Buy" : "View"}</button>
                         </a>
                         : null}

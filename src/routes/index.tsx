@@ -5,6 +5,7 @@ import ExperienceSection from './components/Experience';
 import EducationSection from './components/Education';
 import SkillsSection from './components/Skills';
 import LanguagesSection from './components/Languages';
+import InterestSection from './components/Interests';
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    {/* <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li> */}
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#languages">Languages</a></li>
                     {/* <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#favorites">Favorites</a></li> */}
                 </ul>
@@ -56,20 +57,8 @@ export default function Home() {
             <hr class="m-0" />
 
             {/* Interests */}
-            {/* <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a software developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-5">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-                    <div class="social-icons">
-                        <div class="social-icon"><i class="fa-solid fa-film"></i></div>
-                        <div class="social-icon"><i class="fa-solid fa-pen"></i></div>
-                        <div class="social-icon"><i class="fa-solid fa-book-open-reader"></i></div>
-                        <div class="social-icon"><i class="fas fa-hiking"></i></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" /> */}
+            <InterestSection />
+            <hr class="m-0" />
 
             {/* Languages */}
             <LanguagesSection />       

@@ -213,3 +213,54 @@ a {
   flex-direction: column;
   justify-content: space-around;
 }
+@keyframes load-90 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.bar-90 {
+  animation: load-90 2s ease-out forwards;
+}
+
+@keyframes load-80 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.bar-80 {
+  animation: load-80 2s ease-out forwards;
+}
+
+@keyframes load-40 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+.bar-90 {
+  animation: load-90 2s ease-out forwards;
+}
+
+@keyframes load-10 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 10%;
+  }
+}
+
+.bar-10 {
+  animation: load-10 2s ease-out forwards;
+}
