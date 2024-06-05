@@ -51,13 +51,30 @@ ScrollReveal({
   delay: 200,
 });
 
-ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
+ScrollReveal().reveal(".home-content, .section-header", { origin: "top" });
+ScrollReveal().reveal(".skill-title", { opacity: 0, distance: "0px", duration: 1000});
 ScrollReveal().reveal(
   ".home-img, .services-container, .portfolio-box, .contact form",
   { origin: "bottom" }
 );
-ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
-ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+ScrollReveal().reveal(
+  ".home-content h1, .about-img, .bar-container, .left-animation",
+  {
+    origin: "left",
+  }
+);
+ScrollReveal().reveal(".skill-name", {
+  origin: "left",
+  duration: 500,
+});
+ScrollReveal().reveal(".home-content p, .about-content", {
+  origin: "right",
+});
+ScrollReveal().reveal(".skill-rating", {
+  origin: "right",
+  duration: 500,
+});
+ScrollReveal().reveal("", { scale: 0.85, duration: 500 });
 
 /*===== typed js =====*/
 
@@ -75,17 +92,16 @@ const typed = new Typed(".multiple-text", {
     "Web Developer",
     "Mobile App Developer",
     "Video Editor",
-    "Foodie",    
+    "Foodie",
     "Bookworm",
-    "Cinephile",    
-    "Hiker"
+    "Cinephile",
+    "Hiker",
   ],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
   loop: true,
 });
-
 
 document.querySelectorAll(".carousel__container").forEach((carousel) => {
   const items = carousel.querySelectorAll(".carousel__item");
@@ -107,16 +123,14 @@ document.querySelectorAll(".carousel__container").forEach((carousel) => {
   const buttonRight = document.querySelector("#carousel-right");
 
   const handleUpdate = () => {
-    items.forEach((item) =>
-      item.classList.remove("carousel__item--selected")
-    );
+    items.forEach((item) => item.classList.remove("carousel__item--selected"));
     carouselBtns.forEach((carouselBtn) =>
       carouselBtn.classList.remove("carousel__btn--selected")
     );
 
-    carouselBtns[currentPosition].classList.add("carousel__btn--selected")
+    carouselBtns[currentPosition].classList.add("carousel__btn--selected");
     items[currentPosition].classList.add("carousel__item--selected");
-  }
+  };
 
   buttonLeft.addEventListener("click", () => {
     if (currentPosition > 0) {
@@ -126,7 +140,7 @@ document.querySelectorAll(".carousel__container").forEach((carousel) => {
     }
 
     handleUpdate();
-  })
+  });
 
   buttonRight.addEventListener("click", () => {
     if (currentPosition < carouselBtns.length - 1) {
@@ -136,7 +150,7 @@ document.querySelectorAll(".carousel__container").forEach((carousel) => {
     }
 
     handleUpdate();
-  })
+  });
 
   carouselBtns.forEach((carouselBtn, i) => {
     carouselBtn.addEventListener("click", () => {
