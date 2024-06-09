@@ -103,8 +103,8 @@ const typed = new Typed(".multiple-text", {
   loop: true,
 });
 
-document.querySelectorAll(".carousel__container").forEach((carousel) => {
-  const items = carousel.querySelectorAll(".carousel__item");
+document.querySelectorAll(".carousel_container").forEach((carousel) => {
+  const items = carousel.querySelectorAll(".carousel_item");
   const buttonHtml = Array.from(items, () => {
     return `<span class="carousel__btn"></span>`;
   });
@@ -123,13 +123,13 @@ document.querySelectorAll(".carousel__container").forEach((carousel) => {
   const buttonRight = document.querySelector("#carousel-right");
 
   const handleUpdate = () => {
-    items.forEach((item) => item.classList.remove("carousel__item--selected"));
+    items.forEach((item) => item.classList.remove("carousel_item--selected"));
     carouselBtns.forEach((carouselBtn) =>
       carouselBtn.classList.remove("carousel__btn--selected")
     );
 
     carouselBtns[currentPosition].classList.add("carousel__btn--selected");
-    items[currentPosition].classList.add("carousel__item--selected");
+    items[currentPosition].classList.add("carousel_item--selected");
   };
 
   buttonLeft.addEventListener("click", () => {
@@ -157,13 +157,13 @@ document.querySelectorAll(".carousel__container").forEach((carousel) => {
       currentPosition = i;
       // un-select all the items
       items.forEach((item) =>
-        item.classList.remove("carousel__item--selected")
+        item.classList.remove("carousel_item--selected")
       );
       carouselBtns.forEach((carouselBtn) =>
         carouselBtn.classList.remove("carousel__btn--selected")
       );
 
-      items[i].classList.add("carousel__item--selected");
+      items[i].classList.add("carousel_item--selected");
       carouselBtn.classList.add("carousel__btn--selected");
     });
   });

@@ -267,8 +267,7 @@ span {
 
 .publications-container {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 5rem;
 }
@@ -306,128 +305,14 @@ span {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
 }
+
 .publications-box a:hover {
   box-shadow: 0 0 1.5rem var(--bs-orange);
   color: var(--bs-white);
 }
 
-.portfolio {
-  background: var(--bs-orange);
-}
-
-.certificates h2 {
-  margin-bottom: 4rem;
-}
-
-.portfolio-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: 2.5rem;
-}
-
-.portfolio-container .portfolio-box {
-  position: relative;
-  border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--bs-white);
-  overflow: hidden;
-  display: flex;
-  height: 280px;
-}
-
-.portfolio-box img {
-  width: 100%;
-  transition: 0.5s ease;
-}
-
-.portfolio-box img {
-  transform: scale(1.1);
-}
-
-.portfolio-box .portfolio-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--bs-orange));
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: 0.5s ease;
-}
-
-.portfolio-box:hover .portfolio-layer {
-  transform: translateY(0);
-}
-
-.portfolio-layer h4 {
-  font-size: 3rem;
-  margin: 5rem 0 1rem;
-}
-
-.portfolio-layer p {
-  font-size: 1.6rem;
-  margin: 2rem 0 1rem;
-}
-
-.portfolio-layer a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: var(--text-color);
-  border-radius: 50%;
-}
-
-.portfolio-layer a i {
-  font-size: 2rem;
-  color: var(--bs-orange);
-}
-
-.contact h2 {
-  margin-bottom: 3rem;
-}
-
-.contact form {
-  max-width: 70rem;
-  margin: 1rem auto;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 1.6rem;
-  color: var(--text-color);
-  background: var(--bs-orange);
-  border-radius: 0.8rem;
-  margin: 0.7rem 0;
-}
-
-.contact form .input-box input {
-  width: 49%;
-}
-
-.contact form textarea {
-  resize: none;
-}
-
-.contact form .btn {
-  margin-top: 2rem;
-  cursor: pointer;
+.education {
+  background: var(--bs-white-smoke);
 }
 
 .footer {
@@ -603,17 +488,18 @@ span {
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  background: var(--bs-orange);
+  background: var(--bs-white-smoke);
+  color: black;
 }
 
-.testimonials__container {
+.testimonials_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
 }
 
-.carousel__icon {
+.carousel_icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -628,16 +514,17 @@ span {
   transition: 0.5s ease;
   flex-shrink: 0;
   flex-grow: 0;
+  caret-color: transparent;
   cursor: pointer;
 }
 
-.carousel__container {
+.carousel_container {
   position: relative;
   padding: 2rem;
   width: 88%;
 }
 
-.carousel__item {
+.carousel_item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -647,11 +534,11 @@ span {
   display: none;
 }
 
-.carousel__item--selected {
+.carousel_item--selected {
   display: flex;
 }
 
-.testimonial__block {
+.testimonial_block {
   padding: 5rem 1.5rem 1rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -671,13 +558,12 @@ span {
   user-select: none;
 }
 
-.testimonial__block:hover {
+.testimonial_block:hover {
   border-color: var(--bs-orange);
   transform: scale(1.02);
 }
 
 .carousel-btn-enabled:hover {
-  background: var(--bs-orange);
   color: var(--bs-orange);
   box-shadow: 0 0 1rem var(--bs-orange);
 }
@@ -697,7 +583,6 @@ span {
   border: 2px solid var(--bs-orange);
   overflow: hidden;
   border-radius: 1000px;
-
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: -moz-none;
@@ -740,51 +625,15 @@ svg {
   font-size: 1.3em;
 }
 
-.testimonial__paragraph {
+.testimonial_paragraph {
   font-size: 1.6em;
   text-align: center;
   line-height: 1.7rem;
   padding: 1rem 0;
 }
 
-.carousel__nav {
-  width: 100%;
-  padding: 20px 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
-.carousel__btn {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  border-radius: 50%;
-  border: 1.5px solid var(--bs-orange);
-  background: transparent;
-  cursor: pointer;
-  margin: 0 5px;
-  transition: 0.5s ease-in;
-}
-
-.carousel__btn--selected {
-  background-color: var(--bs-orange);
-}
-
-.carousel__action__btn {
-  color: white;
-  background-color: var(--bs-orange);
-  margin: 2rem 0;
-  padding: 1rem 2.5rem;
-  outline: none;
-  border: none;
-  border-radius: 2rem;
-  cursor: pointer;
-}
-
 @media (500px <= width <= 915px) {
-  .testimonial__block {
+  .testimonial_block {
     padding: 6rem 1.5rem 1rem 1.5rem;
   }
 }
@@ -799,7 +648,7 @@ svg {
     /* max-width: 50%; */
   }
 
-  .testimonial__block {
+  .testimonial_block {
     padding: 6rem 3rem 3rem 3rem;
     width: 100%;
   }
@@ -822,6 +671,10 @@ a:hover {
 .text-primary {
   --bs-text-opacity: 1;
   color: var(--bs-orange) !important;
+}
+
+.text-black {
+  color: #000 !important;
 }
 
 .mt-0 {
