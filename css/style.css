@@ -135,6 +135,8 @@ svg {
   font-weight: 600;
   cursor: default;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu-icon {
@@ -218,10 +220,10 @@ span {
 
 .btn {
   display: inline-block;
-  padding: 1rem 2.8rem;
+  padding: 1.4rem 2.8rem;
   background: var(--bs-orange);
-  border-radius: 4rem;
-  font-size: 1.6rem;
+  border-radius: 0.7rem;
+  font-size: 1.5rem;
   color: var(--bs-white);
   letter-spacing: 0.1rem;
   text-decoration: none;
@@ -230,7 +232,8 @@ span {
 }
 
 .btn:hover {
-  box-shadow: none;
+  box-shadow: 0 0 1.5rem var(--bs-orange);
+  color: var(--bs-white);
 }
 
 .about {
@@ -244,6 +247,15 @@ span {
   text-align: center;
   font-size: 5.5rem;
   text-transform: uppercase;
+}
+
+.navbar-header {
+  font-size: 5.5rem;
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: var(--bs-white);
 }
 
 .description {
@@ -267,6 +279,9 @@ span {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.gap-5 {
   gap: 5rem;
 }
 
@@ -359,18 +374,6 @@ span {
 
   section {
     padding: 10rem 3% 2rem;
-  }
-
-  .publications {
-    padding-bottom: 7rem;
-  }
-
-  .portfolio {
-    padding-bottom: 7rem;
-  }
-
-  .contact {
-    min-height: auto;
   }
 
   .footer {
@@ -1109,12 +1112,20 @@ a:hover {
   width: 95%;
 }
 
+.width-90 {
+  width: 90%;
+}
+
 .width-85 {
   width: 85%;
 }
 
 .width-75 {
   width: 75%;
+}
+
+.width-70 {
+  width: 70%;
 }
 
 .width-50 {
@@ -1148,4 +1159,54 @@ a:hover {
   align-items: center;
   display: flex;
   margin-right: 2rem;
+}
+
+.image-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.show-on-big-screens {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .show-on-big-screens {
+      display: block;
+  }
+}
+
+.show-on-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .show-on-mobile {
+      display: block;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: var(--bs-gray);
+  margin: 0rem 3rem;
+}
+
+@media (max-width: 800px) {
+  .image-grid .img {
+      width: 85%;
+      margin: 0 auto; /* This will center the images */
+  }
 }

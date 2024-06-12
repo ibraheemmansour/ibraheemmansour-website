@@ -51,14 +51,14 @@ ScrollReveal({
   delay: 200,
 });
 
-ScrollReveal().reveal(".home-content, .section-header", { origin: "top" });
+ScrollReveal().reveal(".home-content, .section-header, .top-animation", { origin: "top" });
 ScrollReveal().reveal(".skill-title", {
   opacity: 0,
   distance: "0px",
   duration: 1000,
 });
 ScrollReveal().reveal(
-  ".home-img, .services-container, .portfolio-box, .contact form",
+  ".home-img, .services-container, .portfolio-box, .contact form, .bottom-animation",
   { origin: "bottom" }
 );
 ScrollReveal().reveal(
@@ -78,7 +78,7 @@ ScrollReveal().reveal(".skill-rating", {
   origin: "right",
   duration: 500,
 });
-ScrollReveal().reveal('.scaleUp', { scale: 0.85 });
+ScrollReveal().reveal('.scaleUp', { scale: 0.85, duration: 1200 });
 
 /*===== typed js =====*/
 
