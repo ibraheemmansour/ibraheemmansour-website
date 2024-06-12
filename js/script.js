@@ -52,13 +52,17 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal(".home-content, .section-header", { origin: "top" });
-ScrollReveal().reveal(".skill-title", { opacity: 0, distance: "0px", duration: 1000});
+ScrollReveal().reveal(".skill-title", {
+  opacity: 0,
+  distance: "0px",
+  duration: 1000,
+});
 ScrollReveal().reveal(
   ".home-img, .services-container, .portfolio-box, .contact form",
   { origin: "bottom" }
 );
 ScrollReveal().reveal(
-  ".home-content h1, .about-img, .bar-container, .left-animation",
+  ".home-content h1, .about-img, .bar-container, .left-animation, .interest",
   {
     origin: "left",
   }
@@ -67,14 +71,14 @@ ScrollReveal().reveal(".skill-name", {
   origin: "left",
   duration: 500,
 });
-ScrollReveal().reveal(".home-content p, .about-content", {
+ScrollReveal().reveal(".home-content p, .about-content, .right-animation", {
   origin: "right",
 });
 ScrollReveal().reveal(".skill-rating", {
   origin: "right",
   duration: 500,
 });
-ScrollReveal().reveal("", { scale: 0.85, duration: 500 });
+ScrollReveal().reveal('.scaleUp', { scale: 0.85 });
 
 /*===== typed js =====*/
 
@@ -97,27 +101,29 @@ const typed = new Typed(".multiple-text", {
     "Cinephile",
     "Hiker",
   ],
-  typeSpeed: 100,
-  backSpeed: 100,
+  typeSpeed: 20,
+  backSpeed: 20,
   backDelay: 1000,
   loop: true,
 });
 
+/*===== carousel =====*/
+
 document.querySelectorAll(".carousel_container").forEach((carousel) => {
   const items = carousel.querySelectorAll(".carousel_item");
   const buttonHtml = Array.from(items, () => {
-    return `<span class="carousel__btn"></span>`;
+    return `<span class="carousel_btn"></span>`;
   });
   carousel.insertAdjacentHTML(
     "beforeend",
     `<div class="carousel__nav">${buttonHtml.join("")}</div>`
   );
 
-  const carouselBtns = carousel.querySelectorAll(".carousel__btn");
+  const carouselBtns = carousel.querySelectorAll(".carousel_btn");
 
-  let currentPosition = 0;
+  let currentPosition = 1;
 
-  carouselBtns[currentPosition].classList.add("carousel__btn--selected");
+  carouselBtns[currentPosition].classList.add("carousel_btn--selected");
 
   const buttonLeft = document.querySelector("#carousel-left");
   const buttonRight = document.querySelector("#carousel-right");
@@ -125,10 +131,10 @@ document.querySelectorAll(".carousel_container").forEach((carousel) => {
   const handleUpdate = () => {
     items.forEach((item) => item.classList.remove("carousel_item--selected"));
     carouselBtns.forEach((carouselBtn) =>
-      carouselBtn.classList.remove("carousel__btn--selected")
+      carouselBtn.classList.remove("carousel_btn--selected")
     );
 
-    carouselBtns[currentPosition].classList.add("carousel__btn--selected");
+    carouselBtns[currentPosition].classList.add("carousel_btn--selected");
     items[currentPosition].classList.add("carousel_item--selected");
   };
 
@@ -156,15 +162,13 @@ document.querySelectorAll(".carousel_container").forEach((carousel) => {
     carouselBtn.addEventListener("click", () => {
       currentPosition = i;
       // un-select all the items
-      items.forEach((item) =>
-        item.classList.remove("carousel_item--selected")
-      );
+      items.forEach((item) => item.classList.remove("carousel_item--selected"));
       carouselBtns.forEach((carouselBtn) =>
-        carouselBtn.classList.remove("carousel__btn--selected")
+        carouselBtn.classList.remove("carousel_btn--selected")
       );
 
       items[i].classList.add("carousel_item--selected");
-      carouselBtn.classList.add("carousel__btn--selected");
+      carouselBtn.classList.add("carousel_btn--selected");
     });
   });
 });

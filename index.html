@@ -7,9 +7,9 @@
     <title>Ibraheem Mansour</title>
     <link rel="icon" type="image/x-icon" href="/images/logo.png" />
 
-    <!-- box icons -->
+    <!-- font awesome icons -->
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       rel="stylesheet"
     />
 
@@ -23,8 +23,7 @@
   <body>
     <!-- header design -->
     <header class="header">
-      <a href="#" class="logo">Welcome!</a>
-      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About Me</a>
@@ -32,16 +31,16 @@
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
-        <a href="#testimonials">Testimonials</a>
         <a href="#interests">Interests</a>
         <a href="#languages">Languages</a>
+        <a href="#testimonials">Testimonials</a>
       </nav>
     </header>
 
     <!-- home section design-->
     <section class="home" id="home">
       <div class="home-content">
-        <div class="lead mb-4">Hello, It's Me</div>
+        <div class="lead mb-4">Welcome, I am</div>
         <h2 class="line-height-1 mb-5">
           Ibraheem <span class="text-primary mansour">Mansour</span>
         </h2>
@@ -57,50 +56,48 @@
           </p>
         </div>
         <div class="social-media">
-          <a href="http://lb.linkedin.com/in/IbraheemMansour" target="_blank"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
+          <a href="http://lb.linkedin.com/in/IbraheemMansour" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
           <a href="https://twitter.com/@Ibraheem1334" target="_blank"
-            ><i class="bx bxl-twitter"></i
+            ><i class="fa-brands fa-twitter"></i
           ></a>
           <a href="https://wa.me/9613062901" title="Instagram" target="_blank"
-            ><i class="bx bxl-whatsapp"></i
+            ><i class="fa-brands fa-whatsapp"></i
           ></a>
           <a
             href="https://www.instagram.com/ibraheemmansour1992"
             target="_blank"
-            ><i class="bx bxl-instagram"></i
-          ></a>
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
           <a
             href="https://www.amazon.com/stores/Ibraheem-Mansour/author/B0D3NXLWNS"
             title="Amazon"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="bx bxl-amazon"></i
+            ><i class="fa-brands fa-amazon"></i
           ></a>
           <a
             href="https://www.goodreads.com/author/show/49698345.Ibraheem_Mansour"
             title="GoodReads"
             target="_blank"
             rel="noopener noreferrer"
-            ><i style="margin-top: 1.94rem"></i
-            ><img
-              src="images/icons/goodreads.png"
-              alt="GoodReads"
-              class="img img-fluid"
-          /></a>
+          >
+            <i class="fa-brands fa-goodreads-g"></i>
+          </a>
           <a
             href="https://github.com/ibraheemmansour"
             title="GitHub"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="bx bxl-github"></i
+            ><i class="fa-brands fa-github"></i
           ></a>
         </div>
       </div>
-      <div class="home-img m-5">
+      <div class="home-img mb-5">
         <img
-          class="img img-fluid"
+          class="img img-fluid main-image"
           src="images/home.png"
           alt="Ibraheem Mansour"
         />
@@ -109,13 +106,8 @@
 
     <!-- about section design -->
     <section class="about" id="about">
-      <img
-        src="images/about.png"
-        alt="Ibraheem Mansour"
-        class="img img-fluid"
-      />
-      <div class="about-content">
-        <h2 class="section-header">
+      <div>
+        <h2 class="section-header mb-5">
           About <span class="text-primary">Me</span>
         </h2>
         <p class="text-justify description">
@@ -127,8 +119,12 @@
           the art of writing, I discovered a freedom from binary constraints,
           allowing my imagination to soar and my emotions to speak.
         </p>
-        <!-- <a href="about.html" class="btn">Read More</a> -->
       </div>
+      <img
+        src="images/about.png"
+        alt="Ibraheem Mansour"
+        class="img img-fluid left-animation"
+      />
     </section>
 
     <!-- punlications section design -->
@@ -235,49 +231,50 @@
             >Read More</a
           >
         </div>
+        <div class="publications-box"></div>
       </div>
     </section>
 
     <!-- experience section design -->
-    <section class="experience" id="experience">
+    <section id="experience">
       <h2 class="section-header mb-5"><span>Experience</span></h2>
       <div class="mb-5 left-animation">
         <h1 class="title">Senior Application Developer</h1>
         <div class="mb-3 subtitle">Telus / Grappa Systems</div>
-        <div class="mb-3 description text-justify">
-          <p>
+        <ol class="mb-3 description text-justify">
+          <li>
             <b>TTV OptikApi Identity/Provisioning</b>: A web portal for user
             authentication and provisioning, built with C#, MS SQL, MySQL, and
             Redis.
-          </p>
-          <p>
-            <b>EAS Mobile App</b> A Flutter-based mobile application that uses
+          </li>
+          <li>
+            <b>EAS Mobile App</b>: A Flutter-based mobile application that uses
             socket.io to send push notifications in response to alerts.
-          </p>
-          <p>
-            <b>NaaSMon Mobile App</b> Developed with React Native and a Python
+          </li>
+          <li>
+            <b>NaaSMon Mobile App</b>: Developed with React Native and a Python
             backend API, this app lists and filters Network Security Groups
             (NSGs), including their networks, locations, and performance
             metrics.
-          </p>
-          <p>
-            <b>AccountManager Web App</b> A React.js web application designed
+          </li>
+          <li>
+            <b>AccountManager Web App</b>: A React.js web application designed
             for CRUD operations, enabling efficient user account management.
-          </p>
-          <p>
-            <b>OPUS Subscriber API</b> A Node.js application that verifies
+          </li>
+          <li>
+            <b>OPUS Subscriber API</b>: A Node.js application that verifies
             subscriber information and caches it in Redis.
-          </p>
-          <p>
-            <b>ChatChannels</b> A Mediaroom PF app that enables group chats for
+          </li>
+          <li>
+            <b>ChatChannels</b>: A Mediaroom PF app that enables group chats for
             users watching TV together.
-          </p>
-          <p>
-            <b>VideoPortal VR</b> A React VR application for Samsung GearVR that
+          </li>
+          <li>
+            <b>VideoPortal VR</b>: A React VR application for Samsung GearVR that
             retrieves and displays lists of Video on Demand (VOD) content from
             an API.
-          </p>
-        </div>
+          </li>
+        </ol>
         <span class="text-primary subheading">September 2016 - Present</span>
       </div>
       <div class="mb-5 left-animation">
@@ -285,13 +282,13 @@
         <div class="mb-3 subtitle">
           ISS International Software Solutions · Internship
         </div>
-        <div class="mb-3 description text-justify">
-          <p>Created SharePoint web parts using .NET, HTML, and AngularJS.</p>
-          <p>
+        <ol class="mb-3 description text-justify">
+          <li>Created SharePoint web parts using .NET, HTML, and AngularJS.</li>
+          <li>
             Developed a Loan Calculator based on a Client-Side Model, utilized
             within a Banking application.
-          </p>
-        </div>
+          </li>
+        </ol>
         <span class="text-primary subheading">April 2016 - May 2016</span>
       </div>
       <div class="mb-5 left-animation">
@@ -299,16 +296,16 @@
         <div class="mb-3 subtitle">
           Automation and Computer Technologies · Internship
         </div>
-        <div class="mb-3 description text-justify">
-          <p>
+        <ol class="mb-3 description text-justify">
+          <li>
             Joined ACT's Enterprise Services Department as a System Engineer.
-          </p>
-          <p>
+          </li>
+          <li>
             Completed courses and tasks covering UNIX Fundamentals, Solaris
             Intermediate Administration, Solaris Advanced Administration, and
             Introduction to Backups and Restores.
-          </p>
-        </div>
+          </li>
+        </ol>
         <span class="text-primary subheading">September 2014</span>
       </div>
     </section>
@@ -386,36 +383,6 @@
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle empty"></div>
-            <div class="circle empty"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">MS Word</div>
-          <div class="skill-rating">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">MS Excel</div>
-          <div class="skill-rating">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle empty"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-name">MS PowerPoint</div>
-          <div class="skill-rating">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
             <div class="circle empty"></div>
           </div>
         </div>
@@ -672,16 +639,6 @@
           </div>
         </div>
         <div class="skill">
-          <div class="skill-name">GitHub</div>
-          <div class="skill-rating">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle empty"></div>
-          </div>
-        </div>
-        <div class="skill">
           <div class="skill-name">Git</div>
           <div class="skill-rating">
             <div class="circle"></div>
@@ -691,17 +648,6 @@
             <div class="circle empty"></div>
           </div>
         </div>
-        <div class="skill">
-          <div class="skill-name">Bitbucket</div>
-          <div class="skill-rating">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle empty"></div>
-          </div>
-        </div>
-
         <div class="skill">
           <div class="skill-name">Slack</div>
           <div class="skill-rating">
@@ -765,12 +711,92 @@
       </div>
     </section>
 
+    <!-- interests section design -->
+    <section id="interests">
+      <h2 class="section-header mb-5"><span>Interests</span></h2>
+      <div class="interest-group">
+        <div class="interest">
+          <p class="mr-4">
+            <i class="fa-solid fa-film"></i>
+          </p>
+          <div class="lead">Cinema</div>
+        </div>
+        <div class="interest">
+          <p class="mr-4">
+            <i class="fa-solid fa-pen"></i>
+          </p>
+          <div class="lead">Writing</div>
+        </div>
+        <div class="interest">
+          <p class="mr-4">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </p>
+          <div class="lead">Reading</div>
+        </div>
+        <div class="interest">
+          <p class="mr-4">
+            <i class="fa-solid fa-person-hiking"></i>
+          </p>
+          <div class="lead">Hiking</div>
+        </div>
+        <div class="interest">
+          <p class="mr-4">
+            <i class="fa-solid fa-music"></i>
+          </p>
+          <div class="lead">Dancing</div>
+        </div>
+        <div class="interest">
+          <p class="mr-4">
+            <i class="fa-solid fa-horse"></i>
+          </p>
+          <div class="lead">Horse Riding</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- languages section design -->
+    <section id="languages" class="languages">
+      <h2 class="section-header mb-5"><span>Languages</span></h2>
+      <div class="bar-container">
+        <p class="title mb-2">Arabic</p>
+        <div class="bar-background width-100">
+          <div class="bar width-95"></div>
+        </div>
+      </div>
+      <div class="bar-container">
+        <p class="title mb-2">English</p>
+        <div class="bar-background width-100">
+          <div class="bar width-85"></div>
+        </div>
+      </div>
+      <div class="bar-container">
+        <p class="title mb-2">French</p>
+        <div class="bar-background width-100">
+          <div class="bar width-50"></div>
+        </div>
+      </div>
+      <div class="bar-container">
+        <p class="title mb-2">German</p>
+        <div class="bar-background width-100">
+          <div class="bar width-5"></div>
+        </div>
+      </div>
+      <div class="bar-container">
+        <p class="title mb-2">Italian</p>
+        <div class="bar-background width-100">
+          <div class="bar width-5"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- testimonials section design -->
     <section id="testimonials" class="testimonials">
-      <h2 class="section-header"><span class="text-black">Testimonials</span></h2>
+      <h2 class="section-header mb-5">
+        <span class="text-black">Testimonials</span>
+      </h2>
       <div class="testimonials_container">
         <div class="carousel_icon carousel-btn-enabled" id="carousel-left">
-          <i class="bx bxs-chevron-left"></i>
+          <i class="fa-solid fa-arrow-left"></i>
         </div>
         <div class="carousel_container">
           <div class="carousel_item">
@@ -785,7 +811,11 @@
               <h4 class="name">Fadi Abou Dib</h4>
               <h4 class="position">Software Development Manager</h4>
               <p class="testimonial_paragraph">
-                I have worked with Ibraheem for eight years, and he has always been an important part of the team. Ibraheem works hard, takes initiative, and collaborates well with others. He is friendly and easy to get along with. I can confidently say that he is very dependable and has excellent work ethics.
+                I have worked with Ibraheem for eight years, and he has always
+                been an important part of the team. Ibraheem works hard, takes
+                initiative, and collaborates well with others. He is friendly
+                and easy to get along with. I can confidently say that he is
+                very dependable and has excellent work ethics.
               </p>
             </div>
           </div>
@@ -802,7 +832,8 @@
               <h4 class="name">Mickel Debs</h4>
               <h4 class="position">Full-Stack Developer</h4>
               <p class="testimonial_paragraph">
-                Ibraheem guarantees exceptional quality and his positive energy elevates the team. A true asset!
+                Ibraheem guarantees exceptional quality and his positive energy
+                elevates the team. A true asset!
               </p>
             </div>
           </div>
@@ -819,7 +850,12 @@
               <h4 class="name">Abed Habboub</h4>
               <h4 class="position">Interior Designer</h4>
               <p class="testimonial_paragraph">
-                Ibraheem showcases resilience when facing challenges, displaying a determined resolve that prevents him from giving up. His proficient problem-solving abilities allow him to tackle any obstacles he encounters effortlessly. As a dedicated individual, he has a strong inclination towards learning and acquiring new skills.
+                Ibraheem showcases resilience when facing challenges, displaying
+                a determined resolve that prevents him from giving up. His
+                proficient problem-solving abilities allow him to tackle any
+                obstacles he encounters effortlessly. As a dedicated individual,
+                he has a strong inclination towards learning and acquiring new
+                skills.
               </p>
             </div>
           </div>
@@ -836,7 +872,13 @@
               <h4 class="name">Mireille Al Assal</h4>
               <h4 class="position">Software Engineer</h4>
               <p class="testimonial_paragraph">
-                Ibraheem Mansour is an outstanding professional who consistently exhibits resilience and determination when facing challenges. His adept problem-solving skills enable him to navigate obstacles with ease. Known for his meticulous attention to detail, creativity, and reliability, Ibraheem is a dedicated individual with a strong passion for learning and acquiring new skills.
+                Ibraheem Mansour is an outstanding professional who consistently
+                exhibits resilience and determination when facing challenges.
+                His adept problem-solving skills enable him to navigate
+                obstacles with ease. Known for his meticulous attention to
+                detail, creativity, and reliability, Ibraheem is a dedicated
+                individual with a strong passion for learning and acquiring new
+                skills.
               </p>
             </div>
           </div>
@@ -853,7 +895,11 @@
               <h4 class="name">Roger Moughames</h4>
               <h4 class="position">Software Quality Assurance Specialist</h4>
               <p class="testimonial_paragraph">
-                I have had the pleasure of working with Ibraheem Mansour for the past two years at Grappa Systems. During this time, he has consistently demonstrated exceptional software development skills. Ibraheem is known for his attention to detail, creativity, and problem-solving abilities.
+                I have had the pleasure of working with Ibraheem Mansour for the
+                past two years at Grappa Systems. During this time, he has
+                consistently demonstrated exceptional software development
+                skills. Ibraheem is known for his attention to detail,
+                creativity, and problem-solving abilities.
               </p>
             </div>
           </div>
@@ -870,7 +916,10 @@
               <h4 class="name">Tarek Fouani</h4>
               <h4 class="position">Architect</h4>
               <p class="testimonial_paragraph">
-                Ibraheem is resilient in the face of challenges, refusing to yield easily. He exhibits adept problem-solving skills and a hunger for acquiring new knowledge, showcasing his unwavering determination and steadfast dedication.
+                Ibraheem is resilient in the face of challenges, refusing to
+                yield easily. He exhibits adept problem-solving skills and a
+                hunger for acquiring new knowledge, showcasing his unwavering
+                determination and steadfast dedication.
               </p>
             </div>
           </div>
@@ -887,7 +936,13 @@
               <h4 class="name">Yvana Tannous</h4>
               <h4 class="position">Junior Developer</h4>
               <p class="testimonial_paragraph">
-                As a colleague, I deeply value Ibraheem's contagious energy and motivation, which inspire both him and those around him to strive for better. He eagerly takes on challenges, always looking for new solutions and coming up with creative ideas. I admire Ibraheem's determination and his tenacity in the face of adversity. It's truly inspiring to see someone so self-reliant and constantly pushing boundaries.
+                As a colleague, I deeply value Ibraheem's contagious energy and
+                motivation, which inspire both him and those around him to
+                strive for better. He eagerly takes on challenges, always
+                looking for new solutions and coming up with creative ideas. I
+                admire Ibraheem's determination and his tenacity in the face of
+                adversity. It's truly inspiring to see someone so self-reliant
+                and constantly pushing boundaries.
               </p>
             </div>
           </div>
@@ -904,53 +959,19 @@
               <h4 class="name">Michel Akel</h4>
               <h4 class="position">Software Quality Assurance Specialist</h4>
               <p class="testimonial_paragraph">
-                Working with Ibraheem has been a true pleasure. His dedication to his craft shines through in every project he undertakes. He not only has a strong skill set but also brings creativity, attention to detail, and a proactive attitude to every task. His ability to work under pressure distinguishes him as a valuable team member. I highly recommend Ibraheem for his professionalism, talent, and positive attitude.
+                Working with Ibraheem has been a true pleasure. His dedication
+                to his craft shines through in every project he undertakes. He
+                not only has a strong skill set but also brings creativity,
+                attention to detail, and a proactive attitude to every task. His
+                ability to work under pressure distinguishes him as a valuable
+                team member. I highly recommend Ibraheem for his
+                professionalism, talent, and positive attitude.
               </p>
             </div>
           </div>
         </div>
         <div class="carousel_icon carousel-btn-enabled" id="carousel-right">
-          <i class="bx bxs-chevron-right"></i>
-        </div>
-      </div>
-    </section>
-
-    <!-- interests section design -->
-    <section id="interests" class="interests">
-    <h2 class="section-header mb-5"><span>Interests</span></h2>
-    </section>
-
-    <!-- languages section design -->
-    <section id="languages" class="languages">
-      <h2 class="section-header mb-5"><span>Languages</span></h2>
-      <div class="bar-container">
-        <p class="title mb-2">Arabic</p>
-        <div class="bar-background width-100">
-            <div class="bar width-95"></div>
-        </div>
-      </div>
-      <div class="bar-container">
-        <p class="title mb-2">English</p>
-        <div class="bar-background width-100">
-            <div class="bar width-85"></div>
-        </div>
-      </div>
-      <div class="bar-container">
-        <p class="title mb-2">French</p>
-        <div class="bar-background width-100">
-            <div class="bar width-50"></div>
-        </div>
-      </div>
-      <div class="bar-container">
-        <p class="title mb-2">German</p>
-        <div class="bar-background width-100">
-            <div class="bar width-5"></div>
-        </div>
-      </div>
-      <div class="bar-container">
-        <p class="title mb-2">Italian</p>
-        <div class="bar-background width-100">
-            <div class="bar width-5"></div>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </div>
     </section>
@@ -962,7 +983,9 @@
       </div>
 
       <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#home">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
       </div>
     </footer>
 
