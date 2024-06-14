@@ -22,6 +22,7 @@
   --bs-gray-dark: #495057;
   --bs-black-2: #3a3a3a;
   --bs-brown: #562b0e;
+  --bs-dark-white: #e6e6e6;
 }
 
 .container,
@@ -107,12 +108,14 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  color: black;
+  color: var(--bs-dark-white);
 }
 
 .navbar a:hover,
 .navbar a.active {
-  color: white;
+  font-size: 2rem;
+  color: var(--bs-white);
+  font-weight: bolder;
 }
 
 img,
