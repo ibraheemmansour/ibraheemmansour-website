@@ -58,7 +58,7 @@ ScrollReveal().reveal(".skill-title", {
   duration: 1000,
 });
 ScrollReveal().reveal(
-  ".home-img, .services-container, .portfolio-box, .contact form, .bottom-animation",
+  ".home-img, .bottom-animation",
   { origin: "bottom" }
 );
 ScrollReveal().reveal(
